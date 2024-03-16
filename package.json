@@ -6,16 +6,17 @@
     "dev": "concurrently \"next dev\" \"cd backend && go run main.go\"",
     "build": "concurrently \"next build\" \"cd backend && go run main.go\"",
     "start": "next start",
+    "start1": "concurrently \"next dev\" \"cd backend && go run main.go\"",
     "lint": "next lint"
   },
   "dependencies": {
+    "concurrently": "^8.2.2",
     "next": "14.1.3",
     "react": "^18",
     "react-dom": "^18"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",
-    "concurrently": "^8.2.2",
     "eslint": "^8",
     "eslint-config-next": "14.1.3",
     "postcss": "^8",
